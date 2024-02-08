@@ -1,0 +1,93 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "rahul",
+      "email": "rahul@gmail.com",
+      "password": 1234
+    },
+    {
+      "name": "rakesh",
+      "email": "rakesh@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "rajesh",
+      "email": "rajesh@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "sukhi",
+      "email": "sukhi@gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "Tap dance",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "name": "Tap dance",
+      "email": "rahul@gmail.com",
+      "password": "123",
+      "id": 8
+    }
+  ],
+  "stuComplain": [
+    {
+      "ans": "pata nhi",
+      "stuid": 5,
+      "stucomplain": "sukhi ithna rukha sukha kyo hai",
+      "id": 8
+    },
+    {
+      "stuid": 3,
+      "stucomplain": "there is problem in internet",
+      "ans": "tell me about more what happend in the internet if you are donloading issu or net speed issu",
+      "id": 10
+    },
+    {
+      "stuid": 5,
+      "stucomplain": "sukhi ithna rukha sukha kyo hai",
+      "ans": "",
+      "id": 11
+    },
+    {
+      "stuid": 4,
+      "stucomplain": "cghfcghcfcchncnf",
+      "ans": "",
+      "id": 12
+    },
+    {
+      "stuid": 1,
+      "stucomplain": "hbjkbjhb",
+      "ans": "",
+      "id": 13
+    },
+    {
+      "stuid": 8,
+      "stucomplain": "gfhgdhfhtrhtr",
+      "ans": "qwwerrtty",
+      "id": 14
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "name": "sudhir",
+      "email": "sudhir@gmail.com",
+      "password": "123456"
+    }
+  ]
+}

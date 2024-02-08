@@ -1,0 +1,1633 @@
+
+body {
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  background-image: url("../public/images/wave.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#menu {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  background-color: transparent;
+  z-index: 1000;
+  transition: background-color 0.5s ease, color 0.5s ease; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+#menu.scrolled {
+  background-color: white;
+  color: black;
+}
+.logo_h1{
+  display: flex;
+}
+.logo_h1 h1{
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 15px;
+  display: inline-block; 
+  background: url('../public/images/smk.gif') repeat; 
+  background-clip: text; 
+  -webkit-background-clip: text;
+  color: transparent; 
+  animation: colorChange 3s infinite;
+
+}
+.logo_h1 i{
+  margin-top: 21px;
+  font-size: 25px;
+  display: none;
+}
+.menu{
+  display: flow-root;
+}
+
+.menu ul {
+  width: fit-content;
+  margin-top: 24px;
+  display: flex;
+ 
+  justify-content: space-between;
+}
+
+.menu ul li {
+  justify-content: space-around;
+  margin-left: 30px;
+  color: black;
+  list-style: none;
+}
+
+.menu i {
+  color: black;
+  margin-right: 9px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+.menu a:hover i {
+  color: aqua;
+}
+
+.menu a:hover {
+  color: aqua;
+  transition: 0.5s;
+}
+
+.menu.scrolled-text {
+  color: black;
+}
+
+.menu.scrolled-text:hover {
+  color: aqua;
+
+}
+
+/* -----------------------------MENU BAAR CSSS END------------------------------- */
+
+/*---------------- HOME OUTLET CSS ----------------------------------------*/
+.outlet {
+  width: 100%;
+  height: calc(100vh - 90px);
+  position: relative;
+  top: 90px;
+}
+.homedata {
+  width: 100%;
+  display: flex;
+  position: static;
+  justify-content: space-around;
+}
+.home-left {
+  width: 40%;
+  height: 70%;
+  position: relative;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+
+/* ------------------------HOME FORM START----------------------------------------------- */
+
+
+
+.home-left form {
+  width: 450px;
+  height: 400px;
+  margin-top: 10px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.home-left form img{
+  margin: auto;
+}
+
+.home-left form div {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+ 
+  margin-bottom: 16px; 
+ 
+}
+.home-left form h1 {
+  position: relative;
+  font-size: 2em;
+  display: inline-block; 
+  background: url('../public/images/smk.gif') repeat; 
+  background-clip: text; 
+  -webkit-background-clip: text;
+  color: transparent; 
+  animation: colorChange 3s infinite;
+}
+
+label {
+ 
+ color: #ffffff;
+  font-size: 30px;
+}
+
+.home-left form input,
+select {
+  width: 300px;
+  height: 50px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 30px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  margin-left: 10px;
+}
+
+
+
+.home-left form button{
+	margin: auto;
+	border-radius: 20px;
+	background-color: #667292;
+	box-shadow: 10px 15px 40px #36486b;
+	width: 200px;
+	height: 70px;
+	font-size: 50px;
+	font-family: cambria;
+	color: black;
+	border: none;
+  cursor: pointer;
+}
+
+.home-left form button:hover {
+	border: none;
+	background-color: #8d9db6;
+	opacity: 1;
+	color: #36486b;
+}
+
+
+
+.home-left form button:hover {
+	transition: 0.5s ease-in-out;
+  color: black;
+	background: dodgerblue linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed; 
+}
+
+.home-left form button {
+	--color1: #36486b;
+	--color2: #bccad6;
+	font-family: cambria;
+	text-align: center;
+	font-size: 46px;
+	background: repeating-linear-gradient(
+		45deg,
+		var(--color1),
+		var(--color1) 30px,
+		var(--color2) 30px,
+		var(--color2) 60px
+	);
+	background-clip: text;
+	color: transparent;
+	-webkit-background-clip: text;
+	animation: 40s linear 0s infinite move;
+}
+
+@keyframes move {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: 1000px;
+	}
+}
+
+
+
+
+/* -----------------home right side data--------------------------------- */
+
+.home-right {
+  width: 30%;
+  height: 70%;
+  margin-top: 3%;
+  position: relative;
+}
+.home-right h3{
+  text-align: center;
+  font-size: 20px;
+  color: #fff ;
+}
+.home_right-h1{
+  margin-left: 1px;
+}
+
+
+/* -----------------END HOME CSS------------------------------------------------ */
+
+
+
+/* ------------------register_form--START---------------- */
+.register_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  
+}
+
+.registration-form {
+  width: 70%;
+  height: 60vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  background-color:transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.form-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+}
+
+.form-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* ---------------------------------------------------------- */
+.register {
+  width: 60%;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+ 
+}
+
+.register h1 {
+  margin-left: 10%;
+  text-align: center;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #4caf50, #2196f3, #ff9800);
+  border-image-slice: 1;
+  position: relative;
+  font-size: 3em;
+  display: inline-block;
+  background: url('../public/images/smk.gif') repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: colorChange 3s infinite;
+}
+
+.register_form {
+  width: 50%;
+  height: 59%;
+  color: #0e0c0c;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin-left: 2.5%;
+}
+
+.register img {
+  width: 40%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.register_form label {
+  color: #0e0c0c;
+  margin-bottom: 8px;
+}
+
+.register_form input {
+  width: 50%;
+  height: 35px;
+  padding: 8px;
+  border: 2px solid transparent;
+
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  color: #0e0c0c;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: border-color 0.3s ease-in-out;
+  font-size: 20px;
+ 
+}
+
+.registration_input_lable_n input{
+  margin-left: 12%;
+}
+.registration_input_lable_e input{
+  margin-left: 12%;
+}
+.registration_input_lable_p input{
+  margin-left: 3.8%;
+}
+
+.register_form input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.register_form button {
+  width: 40%;
+  height: 15%;
+  background: linear-gradient(to right, #2196f3, #4caf50);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 51px;
+  cursor: pointer;
+  font-size: x-large;
+}
+
+.register_form button:hover {
+  background: linear-gradient(to right, #4caf50, #2196f3);
+}
+/* ---------------------REGITERD FORM END --------------------------------------------------------- */
+
+
+/* -------------------sub DASHBORD_ sTART-------------------------- */
+.dash_bord_student {
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  background-color: transparent;
+  padding: 10px;
+  
+}
+
+.dash_student_center{
+  width: 30%;
+  height: 50px;
+  border-image: linear-gradient(to right, #4caf50, #2196f3, #ff9800);
+  border-image-slice: 1;
+  position: relative;
+  font-size: 30px;
+  display: inline-block;
+  background: url('../public/images/smk.gif') repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: colorChange 3s infinite;
+  overflow: auto;
+}
+
+.dash_student_email {
+  width: 30%;
+  height: 50px;
+  font-size: 27px;
+  
+}
+
+.dash_logout_button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: #ffffff; 
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.dash_logout_button.color2 {
+  background: linear-gradient(135deg, #1970ad,#2db2ce,#2ae1dc);
+}
+
+.dash_logout_button:hover {
+  background: linear-gradient(135deg, #2ae1dc,#2db2ce, #1970ad); 
+}
+
+
+
+/* -----student--dashbor hr -------animation */
+.hr-container {
+  width: 100%;
+  text-align: center;
+}
+
+.animated-line {
+  border: none;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, #1970ad,#2db2ce,#2ae1dc); 
+  background-size: 200% 100%;
+  animation: expand 7s ease-in-out forwards;
+}
+
+@keyframes expand {
+  from {
+    width: 0%;
+    background-position: 0% 0%;
+  }
+  to {
+    width: 100%;
+    background-position: 100% 0%;
+  }
+}
+/* **************hr end******************* */
+#click{
+	display: none;
+}
+
+.submenu {
+  list-style-type: none;
+  width: 200px;
+  height: 100vh;
+  background-color: #05c3f7;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #1970ad;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.submenu_obj {
+  margin-bottom: 10px;
+}
+
+.submenu_obj a {
+  text-decoration: none;
+  color: #000; 
+  font-size: 20px;
+  display: block;
+  padding: 8px;
+}
+
+.submenu_obj a:hover {
+  background-color: #2ae1dc;  
+  font-size: 22px;
+  font-weight: 500;
+  font-family: cursive;
+
+}
+
+.studashbord_system {
+  display: flex;
+}
+
+.studashbord_profile {
+  flex: 1;
+}
+.student_dashbord_left-side_content {
+  flex: 4;
+ 
+}
+/* ---------Student----end DASHBORD CSS------------------- */
+
+/* -------------STUDENTCOMPLAIN CONTAINER  START------------------ */
+.stucomplain_container {
+  max-width: 600px;
+  margin:20px 0px 0px 10%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+}
+.stucomplain_container:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.stucomplain_heding {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.stucomplain_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.stucomplain_textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+.stucomplain_textarea:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.stucomplain_submit_button {
+  padding: 10px 20px;
+  background-color: #3498db; 
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.stucomplain_submit_button:hover {
+  background-color: #2980b9; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* --------------------------student password change--------------- */
+
+
+.stupass_container {
+  display: flex;
+  margin-right: 100px;
+  align-items: center;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+.key-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.key-animation {
+  display: inline-block;
+  font-size: 2em;
+  margin: 0 0 0 120px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  animation: bounceKey 1.5s infinite;
+  
+}
+
+@keyframes bounceKey {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.stupass_image {
+  margin: 0 20px;
+  
+}
+
+.stupass {
+  max-width: 600px;
+}
+
+.stupass form {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+}
+
+.stupass label {
+  margin-bottom: 5px;
+  color: #000;
+  
+}
+.stupass input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid #000; /* Adjust the color as needed */
+  outline: none; /* Remove the default focus outline */
+}
+
+.stupass input:focus {
+  border-bottom: 2px solid #3498db; /* Change color on focus if desired */
+}
+
+.stupass button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.stupass button:hover {
+  background-color: #2980b9;
+}
+
+
+.stupass_image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------LOADER_________________ */
+
+
+.full-screen-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 70px;
+  height: calc(100vh - 90px);
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; 
+}
+
+
+/* ----------------loder end------------------------- */
+
+/* ----------------admin dashbord ------------------------------ */
+
+
+/* Admin Dashboard Header */
+.admin_dashbord {
+  height: 50px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  z-index: 4;
+ 
+ 
+}
+
+.dash_bord_admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.dash_admin_center {
+  margin: 0;
+}
+
+.dash_admin_email {
+  margin: 0;
+}
+
+
+
+.dash_logout_button:hover {
+  background-color: #45a049;
+}
+
+/* Admin Dashboard Content */
+.admin-dashboard-content {
+  display: flex;
+  
+}
+
+/* Admin Dashboard Menu */
+.admin-dashboard-menu {
+  width: 15%;
+  height: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.admin-dashboard-menu ul {
+  width: fit-content;
+  position: absolute;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+.admin-dashboard-menu ul li a i{
+  margin-right: 10px;
+
+
+}
+.admin-dashboard-menu ul li a{
+  display: block;
+  height: 40px;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+.admin-dashboard-menu ul li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.admin-dashboard-menu ul li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.admin_dash_logout_button{
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff; 
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  }
+  .admin_dash_logout_button{
+    
+  
+    background: linear-gradient(135deg, #1970ad,#2db2ce,#2ae1dc);
+  
+  
+  }
+
+
+/*-- Admin Dashboard Content Area----------------------------------------------- */
+.admin_content {
+  width: 80%;
+  display: flex;
+  padding: 18px;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* ---------------admin dashbord seestudentcoplain ---------- */
+
+
+
+/* ----seecomplainstu-------------------- */
+
+.admin_reply_container{
+  width: 100%;
+  height: auto;
+  
+}
+.reply_button{
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  color: #4dc3fa;
+  padding: 8px 12px;
+  border: 2px solid #4dc3fa;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.replay_button:hover {
+  background-color: #4dc3fa; 
+  color: #fff; 
+}
+
+
+
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.complaints-table thead {
+  background-color: white;
+  color: black;
+}
+
+.complaints-table th,
+.complaints-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.complaints-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.complaints-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Additional Styles for Data Rows */
+.complaints-table .student-name {
+  font-weight: bold;
+}
+
+/* Admin Reply Container */
+.admin_reply_container {
+  display: flex;
+}
+
+/* See Complain Table Styles */
+.complaints-container {
+  width: 80%;
+}
+
+
+.complaints-container .page-title {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1em;
+  margin-left: 50px;
+  color: #4dc3fa;
+  text-transform: uppercase;
+}
+
+
+.container_stc {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  height: 300px;
+  display: table;
+  padding: 0 0 8em 0;
+  overflow-y: scroll;
+}
+.container_stc th{
+  color: #fff;
+}
+.container_stc th h1,
+.container_stc td {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+  margin-left: 20px;
+}
+
+
+.container_stc tr:nth-child(odd) {
+  background-color: #323c50;
+}
+
+
+.container_stc tr:nth-child(even) {
+  background-color: #2c3446;
+}
+
+.container_stc th {
+  background-color: #1f2739;
+}
+
+.container_stc td:first-child {
+  color: #fb667a;
+}
+
+.container_stc tr:hover {
+  background-color: #464a52;
+  -webkit-box-shadow: 0 6px 6px -6px #0e1119;
+  -moz-box-shadow: 0 6px 6px -6px #0e1119;
+  box-shadow: 0 6px 6px -6px #0e1119;
+}
+
+.container_stc td:hover {
+  background-color: #fff842;
+  color: #05c3f7;
+  font-weight: bold;
+  box-shadow: #7f7c21 -1px 1px, #7f7c21 -2px 2px, #7f7c21 -3px 3px, #7f7c21 -4px 4px, #7f7c21 -5px 5px, #7f7c21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: line;
+}
+
+/* Admin Answer Styles---------------- */
+
+/* Define styles for the Admin Answer section */
+
+
+.admin_reply_container2{
+  width: 400px;
+  margin-top: 40px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+
+
+.admin_reply_container2:hover{
+  width: 400px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+}
+
+.admin_heading {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1em;
+  margin-left: 50px;
+  color: #4dc3fa;
+  text-transform: uppercase;
+}
+
+.admin_id {
+  font-size: 18px;
+  color: black;
+  margin-left: 20px;
+}
+
+/* Styles for the student complaint form */
+.admin_reply_form {
+  margin-top: 20px;
+  margin-right: 40px;
+  align-items: center;
+}
+
+.admin_reply_textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+  margin-left: 10px;
+}
+
+.admin_REPLY_submit_button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #0056b3;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 20px;
+}
+
+.admin_REPLY_submit_button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* admin password change css */
+.adminpass_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.key-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.key-animation {
+  display: inline-block;
+  font-size: 2em;
+  margin: 0 0 0 23px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  animation: bounceKey 1.5s infinite;
+}
+
+@keyframes bounceKey {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.adminpass_image {
+  margin: 0 20px;
+  padding: 10px;
+}
+
+.Adminpass {
+  max-width: 500px;
+}
+
+.Adminpass form {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+.Adminpass label {
+  margin-bottom: 5px;
+  color: #000;
+}
+.Adminpass input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid #000; /* Adjust the color as needed */
+  outline: none; /* Remove the default focus outline */
+}
+
+.Adminpass input:focus {
+  border-bottom: 2px solid #3498db; /* Change color on focus if desired */
+}
+
+.Adminpass button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.Adminpass button:hover {
+  background-color: #2980b9;
+}
+
+/* Additional styling for the second image */
+.adminpass_image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+/*          ADmin Profle -------- */
+.adminprofile_container{
+  width: 100%;
+  height: 500px;
+}
+
+
+.adminprofile_container .left {
+  left: 25px;
+}
+
+.adminprofile_container .right {
+  right: 25px;
+}
+
+.adminprofile_container .center {
+  text-align: center;
+}
+
+.adminprofile_container .bottom {
+  position: absolute;
+  bottom: 25px;
+}
+
+.adminprofile_container #gradient {
+  background: #999955;
+  background-image: linear-gradient(#DAB046 20%, #D73B25 20%, #D73B25 40%, #C71B25 40%, #C71B25 60%, #961A39 60%, #961A39 80%, #601035 80%);
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 100%;
+  height: 150px;
+}
+
+.adminprofile_container #gradient:after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  margin-top: -67.5px;
+  margin-left: -270px;
+  padding-left: 20px;
+  border-radius: 5px;
+  width: 520px;
+  height: 275px;
+  z-index: -1;
+}
+.image_profile_admin{
+  position: absolute;
+  width: 450px;
+  height: 225px;
+  padding: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+  right: 50%;
+  top: 68.5px;
+ 
+  margin-top: 100px;
+ 
+
+ 
+
+}
+.adminprofile_container #card {
+  position: absolute;
+  width: 450px;
+  height: 225px;
+  padding: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+  left: 50%;
+  top: 67.5px;
+  margin-left: 50px;
+  margin-top: 200px;
+  background: #E9E2D0;
+  box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
+  z-index: 5;
+}
+
+.adminprofile_container #card img {
+  width: 150px;
+  float: left;
+  border-radius: 5px;
+  margin-right: 20px;
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  filter: sepia(1);
+}
+
+.adminprofile_container #card h2 {
+  font-family: courier;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15pt;
+  text-transform: uppercase;
+}
+
+.adminprofile_container #card p {
+  font-family: courier;
+  color: #555;
+  font-size: 13px;
+}
+
+.adminprofile_container #card span {
+  font-family: courier;
+}
+
+/* Student profile -------------- */
+
+
+
+
+
+
+/*          ADmin Profle -------- */
+.stuprofile_container{
+  width: 100%;
+  height: 500px;
+}
+
+
+.stuprofile_container .left {
+  left: 25px;
+}
+
+.stuprofile_container .right {
+  right: 25px;
+}
+
+.stuprofile_container .center {
+  text-align: center;
+}
+
+.stuprofile_container .bottom {
+  position: absolute;
+  bottom: 25px;
+}
+.stuprofile_container #gradient {
+  background: #425b63; /* New background color */
+  background-image: linear-gradient(#f4a261 20%, #e76f51 20%, #e76f51 40%, #d62828 40%, #d62828 60%, #9d6a8a 60%, #9d6a8a 80%, #403d58 80%);
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100%;
+  height: 150px;
+}
+
+.stuprofile_container #gradient:after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  margin-top: -67.5px;
+  margin-left: -270px;
+  padding-left: 20px;
+  border-radius: 5px;
+  width: 520px;
+  height: 275px;
+  z-index: -1;
+}
+.image_profile_student{
+  position: absolute;
+  width: 450px;
+  height: 225px;
+  padding: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+  left: 55%;
+  top: 0.5px;
+ 
+ 
+ 
+ 
+
+ 
+
+}
+.stuprofile_container #card {
+  position: absolute;
+  width: 450px;
+  height: 225px;
+  padding: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+  right: 50%;
+  top: 67.5px;
+  margin-left: 50px;
+  margin-top: 100px;
+  background: #E9E2D0;
+  box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
+  z-index: 5;
+}
+
+.stuprofile_container #card img {
+  width: 150px;
+  float: left;
+  border-radius: 5px;
+  margin-right: 20px;
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  filter: sepia(1);
+}
+
+.stuprofile_container #card h2 {
+  font-family: courier;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15pt;
+  text-transform: uppercase;
+}
+
+.stuprofile_container #card p {
+  font-family: courier;
+  color: #555;
+  font-size: 13px;
+}
+
+.stuprofile_container #card span {
+  font-family: courier;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#footer {
+  width: 100%;
+  height: 200px;
+  background-color: #34f4c4;
+ margin-top: 200px;
+}
+
+.social_p {
+  margin-top: 20px; 
+  
+  background-color: #fff;
+}
+
+.social_p ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social_p ul li {
+  list-style: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  margin-left: 10px; 
+}
+
+
+.social_p i {
+  color: #0e0c0c;
+  margin-top: 10px;
+}
+
+.social_p ul li:hover {
+  background-color: #05c3f7;
+}
+
+.social_p i:hover {
+  color: #ffffff;
+  transition: 1s;
+}
+
+.rights {
+  width: 100%;
+  height: 70px;
+  background-color: #34f4c4;
+  text-align: center;
+  color: #ffffff;
+  clear: both; /* Add a line break after social_p */
+}
+
+.rights p {
+  background-color: #34f4c4;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.rights p b {
+  color: black;
+}
+
+
+
+/* -----------------------------home css------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* ---------media Query */
+
+
+@media screen and (max-width: 768px) {
+  #menu {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .menuBar{
+    display: block;
+  }
+  .menu ul {
+    display: none;
+    
+    align-items: center;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+  .home-left form {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .home-left form input,
+  select {
+    width: 100%;
+  }
+
+  .home-left form button {
+    width: 100%;
+  }
+  .homedata {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-left {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+  }
+  .home-right{
+    width: 100%;
+    height: auto;
+  }
+  .home-right img{
+    display: none;
+  }
+  .home_right-h1{
+   text-align: center;
+  }
+  .register_container {
+    display: inline;
+    width: 100%;
+    height: auto;
+    
+  }
+  .registration-form {
+    width: 100%;
+  }
+  .form-image {
+    display: none;
+  }
+  .register{
+    width: 100%;
+  }
+  .register_form {
+    width: 80%;
+  }
+  /* --------------- */
+  .studashbord_system{
+    width: 100%;
+  }
+
+  .studashbord_profile .menu-btn i {
+    display: block;
+    
+  }
+  
+  #click:checked ~ .submenu {
+    left: 0%;
+  }
+ 
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  .submenu {
+    /* Your submenu styles */
+    position: absolute;
+    left: -110%; /* Initially off-screen */
+    transition: left 0.3s ease;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    
+  }
+ 
+  .dash_student_center{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 30;
+  }
+  
+.dash_logout_button {
+  display: none;
+}
+.stucomplain_container{
+  width: 70%;
+  height:300px ;
+ 
+}
+.stucomplain_heding {
+  margin-top: 20px;
+
+}
+  .stucomplain_form{
+  width: 100%;
+  margin-top: 50px;
+} 
+/* complian end ---- */
+.stupass_container {
+  width: 100%;
+  margin-right: 0;
+  z-index: -5;
+}
+.stupass_image {
+  display: none;
+}
+.stupass form {
+  width: 100%;
+}
+.key-animation{
+ display: none;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+  .menu {
+    display: none;
+  }
+
+  .logo_h1 h1 {
+    font-size: 24px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+ 
+}

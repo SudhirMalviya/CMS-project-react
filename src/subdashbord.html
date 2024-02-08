@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sub Dashboard</h1>
+</header>
+
+<nav>
+    <a onclick="showTab('tab1')">Tab 1</a>
+    <a onclick="showTab('tab2')">Tab 2</a>
+    <a onclick="showTab('tab3')">Tab 3</a>
+</nav>
+
+<section id="tab1">
+    <h2>Tab 1 Content</h2>
+    <p>This is the content for Tab 1.</p>
+</section>
+
+<section id="tab2" class="hidden">
+    <h2>Tab 2 Content</h2>
+    <p>This is the content for Tab 2.</p>
+</section>
+
+<section id="tab3" class="hidden">
+    <h2>Tab 3 Content</h2>
+    <p>This is the content for Tab 3.</p>
+</section>
+
+<script>
+    function showTab(tabId) {
+        // Hide all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        // Show the selected section
+        document.getElementById(tabId).classList.remove('hidden');
+    }
+</script>
+
+</body>
+</html>
